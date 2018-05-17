@@ -1,0 +1,156 @@
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 650px;
+}
+.wrap .info{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 3px 6px #000;
+}
+.wrap .info .p{
+    width: 35%;
+    height: 25%;
+    padding: 10px;
+    margin: 25px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.wrap .info .health{
+    width: 40%;
+    height: 30px;
+    margin: 0 10px;
+    background-color: #666;
+    text-align: center;
+    display: inline-block;
+}
+
+.wrap .info .health .healths{
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #0f0;
+    transition: width .3s
+}
+.wrap .start{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    box-shadow: 0 3px 6px #000;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+.wrap .start p{
+    width: 150px;
+    margin: 15px 10px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #258;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 6px #000;
+}
+.wrap .start p:hover{
+    box-shadow: 0 2px 3px #000;
+}
+.wrap .start p:active{
+    box-shadow: 0 0 0;
+}
+.wrap .control{
+    width: 100%;
+    /* height: 100px; */
+    text-align: center;
+    box-shadow: 0 3px 6px #000;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+@media screen and (max-width: 1000px){
+    .wrap .control{
+        width: 585px;
+        margin: 0 auto;
+    }
+}
+.wrap .control .btn{
+    width: 150px;
+    margin: 25px 10px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #258;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 2px #000;
+}
+.wrap .control .hit{
+    background-color: #f40;
+}
+.wrap .control .hit-hard{
+    background-color: #809;
+}
+.wrap .control .cure{
+    background-color: #0c0;
+}
+.wrap .control .end{
+    background-color: #b00;
+}
+.wrap .control .hit:hover{
+    background-color: #f62;
+}
+.wrap .control .hit-hard:hover{
+    background-color: #a2b;
+}
+.wrap .control .cure:hover{
+    background-color: #2e2;
+}
+.wrap .control .end:hover{
+    background-color: #d22;
+}
+.wrap .control .hit:active{
+    background-color: #f62;
+    box-shadow:0 0 0;
+}
+.wrap .control .hit-hard:active{
+    background-color: #a2b;
+    box-shadow:0 0 0;
+}
+.wrap .control .cure:active{
+    background-color: #2e2;
+    box-shadow:0 0 0;
+}
+.wrap .control .end:active{
+    background-color: #d22;
+    box-shadow:0 0 0;
+}
+.wrap .log ul{
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 3px 6px #000;
+}
+.wrap .log ul{
+    display: none;
+}
+.wrap .log .has{
+    display: block;
+}
+.wrap .log .has li{
+    background: #b00;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #000;
+}
+.wrap .log .has .player{
+    background-color: #809;
+}

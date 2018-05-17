@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue奥特曼打小怪兽</title>
+    <link rel="stylesheet" href="./src/base.css">
+    <script src="./src/vue.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="info">
+            <div class="p player">YOU</div>
+            <div class="p boss">BOSS</div>
+            <div class="health1 health">
+                <div class="health11 healths" :style="{width : health1 + '%'}">{{health1}}</div>
+            </div>
+            <div class="health2 health">
+                <div class="health22 healths" :style="{width : health2 + '%'}">{{health2}}</div>
+            </div>
+            
+        </div>
+        <div class="start" v-if="!runing" @click="start">
+            <p>START</p>
+        </div>
+        <div class="control" v-else>
+            <div class="btn hit" v-on:click="hit">捶它</div>
+            <div class="btn hit-hard" @click="hitHard">天雷术</div>
+            <div class="btn cure" @click="cure">嗑药</div>
+            <div class="btn end" @click="giveUp">不打了！</div>
+        </div>
+        <div class="log">
+            <ul :class="{has: logs.length}">
+                <li v-for="log in logs" :class="{player: log.isP}">{{log.info}}</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    
+    
+    <script src="./src/base.js"></script>
+</body>
+</html>
