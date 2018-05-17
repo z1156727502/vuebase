@@ -5,4 +5,4 @@ vue练习：简易回合制游戏模拟
 
 #### 使用说明
 
-1. xxxx
+1. http://dwqc.gitee.io/vuebase
